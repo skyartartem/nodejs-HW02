@@ -177,3 +177,14 @@ PUT /api/contacts/64650007a543ba766e8d0bb4 20-05-2023_01:44:09
 PUT /api/contacts/5667f9083586a2107198e2c5 20-05-2023_01:44:53
 GET /api/contacts 20-05-2023_01:46:05
 GET /api/contacts/64650007a543ba766e8d0bb5 20-05-2023_01:46:25
+DELETE /api/contacts/64650007a543ba766e8d0bb5 20-05-2023_01:47:40
+GET /api/contacts/64650007a543ba766e8d0bb5 20-05-2023_01:47:46
+GET /api/contacts 20-05-2023_01:47:53
+POST /api/contacts 20-05-2023_01:48:41
+GET /api/contacts 20-05-2023_01:48:49
+GET /api/contacts 20-05-2023_02:06:49
+PUT /api/contacts/6467fcc920f6139579fa5f57/favorite 20-05-2023_02:07:56
+GET /api/contacts 20-05-2023_02:09:08
+PATCH /api/contacts/6467fcc920f6139579fa5f57/favorite 20-05-2023_02:10:02
+PATCH /api/contacts/6467fcc920f6139579fa5f57/favorite 20-05-2023_02:10:22
+DELETE /api/contacts/6467fcc920f6139579fa5f57 20-05-2023_02:12:51
