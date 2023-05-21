@@ -3,7 +3,7 @@ const {
   contactAddSchema,
   updateFavoriteSchema,
 } = require("../../schemas/contacts-schemas");
-const { validateBody } = require("../../decorators");
+const { validateBody, validateFavorite } = require("../../decorators");
 const isValidId = require("../../widdlewares/isValidId");
 const {
   getAllContacts,
@@ -30,7 +30,7 @@ router.put("/:id", isValidId, validateBody(contactAddSchema), updateContact);
 router.patch(
   "/:id/favorite",
   isValidId,
-  validateBody(updateFavoriteSchema),
+  validateFavorite(updateFavoriteSchema),
   updateStatusContact
 );
 
