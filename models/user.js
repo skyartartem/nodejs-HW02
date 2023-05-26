@@ -30,15 +30,27 @@ const userSchema = new Schema(
 userSchema.post("save", handleMongooseErrore);
 
 const registerSchema = Joi.object({
-  password: Joi.string().min(minNum).required(),
-  email: Joi.string().pattern(emailRegexp).required(),
+  password: Joi.string()
+    .min(minNum)
+    .required()
+    .messages({ "any.required": "missing required password field" }),
+  email: Joi.string()
+    .pattern(emailRegexp)
+    .required()
+    .messages({ "any.required": "missing required email field" }),
   subscription: Joi.string().valid("starter", "pro", "business"),
   token: Joi.string(),
 });
 
 const loginSchema = Joi.object({
-  password: Joi.string().min(minNum).required(),
-  email: Joi.string().pattern(emailRegexp).required(),
+  password: Joi.string()
+    .min(minNum)
+    .required()
+    .messages({ "any.required": "missing required password field" }),
+  email: Joi.string()
+    .pattern(emailRegexp)
+    .required()
+    .messages({ "any.required": "missing required email field" }),
 });
 
 const schemas = {
