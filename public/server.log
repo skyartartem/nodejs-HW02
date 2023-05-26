@@ -230,3 +230,7 @@ POST /api/auth/register 26-05-2023_03:28:39
 POST /api/auth/login 26-05-2023_03:29:08
 POST /api/auth/login 26-05-2023_03:30:31
 POST /api/auth/login 26-05-2023_03:30:40
+GET /api/contacts 27-05-2023_01:25:57
+POST /api/auth/register 27-05-2023_01:26:54
+POST /api/auth/login 27-05-2023_01:27:13
+GET /api/contacts 27-05-2023_01:27:33

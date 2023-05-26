@@ -4,9 +4,11 @@ const { User } = require("../models/user");
 const { HttpError } = require("../helpers");
 const { ctrlWrapper } = require("../decorators");
 const { SECRET_KEY } = process.env;
+
 const register = async (req, res) => {
   const { email, password } = req.body;
-  const user = await User.findOne({ email });
+    const user = await User.findOne({ email });
+    
   if (user) {
     throw HttpError(409, "Email in use");
   }
