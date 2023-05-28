@@ -286,3 +286,15 @@ POST /api/auth/logout 27-05-2023_12:12:38
 GET /api/contacts?page=1&limit=5 27-05-2023_12:15:53
 POST /api/auth/login 27-05-2023_12:16:12
 GET /api/contacts?page=1&limit=5 27-05-2023_12:16:29
+POST /api/users/login 28-05-2023_03:43:47
+GET /api/auth/current 28-05-2023_03:44:18
+GET /api/users/current 28-05-2023_03:44:32
+GET /api/contacts?page=1&limit=5 28-05-2023_03:44:45
+POST /api/users/logout 28-05-2023_03:45:00
+POST /api/users/logout 28-05-2023_03:45:14
+POST /users/login 28-05-2023_03:49:38
+GET /api/contacts?page=1&limit=5 28-05-2023_03:50:50
+GET /users/current 28-05-2023_03:51:04
+GET /users/current 28-05-2023_03:51:15
+POST /api/users/logout 28-05-2023_03:51:27
+POST /users/logout 28-05-2023_03:51:38
