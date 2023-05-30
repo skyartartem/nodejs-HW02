@@ -5,6 +5,7 @@ const {
 } = require("../../schemas/contacts-schemas");
 const { validateBody, validateFavorite } = require("../../decorators");
 const isValidId = require("../../widdlewares/isValidId");
+const authenticate = require("../../widdlewares/authenticate");
 const {
   getAllContacts,
   getContactById,
@@ -15,17 +16,24 @@ const {
 } = require("../../controllers");
 
 
+
 const router = express.Router();
 
-router.get("/", getAllContacts);
+router.get("/", authenticate, getAllContacts);
 
-router.get("/:id", isValidId, getContactById);
+router.get("/:id", authenticate, isValidId, getContactById);
 
-router.post("/", validateBody(contactAddSchema), addContact);
+router.post("/", authenticate, validateBody(contactAddSchema), addContact);
 
-router.delete("/:id", isValidId, removeContact);
+router.delete("/:id", authenticate, isValidId, removeContact);
 
-router.put("/:id", isValidId, validateBody(contactAddSchema), updateContact);
+router.put(
+  "/:id",
+  authenticate,
+  isValidId,
+  validateBody(contactAddSchema),
+  updateContact
+);
 
 router.patch(
   "/:id/favorite",

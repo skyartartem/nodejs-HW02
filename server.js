@@ -1,10 +1,8 @@
 const mogoose = require("mongoose");
 
 const app = require("./app");
-// culTsecaDRxLC0vU
-const { DB_HOST, PORT = 3000 } = process.env;
 
-// console.log(process.env);
+const { DB_HOST, PORT = 3000 } = process.env;
 
 mogoose
   .connect(DB_HOST)
