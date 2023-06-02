@@ -1,3 +1,8 @@
+const DB_HOST =
+  "mongodb+srv://skyart:culTsecaDRxLC0vU@cluster0.jkkw02m.mongodb.net/skyart?retryWrites=true&w=majority";
+
+module.exports = {DB_HOST};
+
 [
   {
     _id: "6469f13ea7df65722580ed0e",
