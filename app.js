@@ -2,23 +2,10 @@ const fs = require("fs/promises");
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
-const multer = require("multer")
-const path = require("path")
 const moment = require("moment");
 require("dotenv").config()
 const authRouter = require("./routes/api/auth")
 const contactsRouter = require("./routes/api/contacts");
-
-const tempDir = path.join(__dirname, "temp")
-
-const multerConfig = multer.diskStorage({
-  destination: tempDir,
-  filename: (req, file, cb) => {
-    cb(null, file.originalname)
-  }
-})
-
-const upload = multer({ storage: multerConfig });
 
 const app = express();
 app.use(async (req, res, next) => {
