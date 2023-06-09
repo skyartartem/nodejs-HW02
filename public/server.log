@@ -350,3 +350,12 @@ PATCH /users/avatars 03-06-2023_06:10:18
 POST /api/contacts 03-06-2023_06:16:28
 POST /api/contacts 03-06-2023_06:17:20
 GET /api/contacts 03-06-2023_06:17:45
+POST /users/register 08-06-2023_07:29:35
+POST /users/register 08-06-2023_07:30:08
+GET /users/verify/id1-2xCXkzvQ-boxEGLAf 08-06-2023_07:31:58
+GET /favicon.ico 08-06-2023_07:32:00
+GET /users/verify/id1-2xCXkzvQ-boxEGLAf 08-06-2023_07:56:22
+POST /users/register 09-06-2023_12:00:04
+POST /users/verify 09-06-2023_12:02:08
+GET /users/verify/vFtQBlXFTvfLutVisGPA0 09-06-2023_12:02:39
+GET /favicon.ico 09-06-2023_12:02:41
